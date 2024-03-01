@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    /* aspect-ratio: 100 / 29; */
+}
+
+
+
+/* Add a black background color to the top navigation */
+.navbar {
+    background-color: rgb(43, 42, 42);
+    overflow: hidden;
+    
+  }
+  
+/* Style the links inside the navigation bar */
+.navbar a {
+    float: left;
+    color: #d3caca;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+/* .navbar a.active {
+    background-color: red;
+
+    color: white;
+  } */
+
+
