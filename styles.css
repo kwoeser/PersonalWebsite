@@ -1,15 +1,23 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #222020;
+  background-color: #292929;
+  /* font-family: "Lucida Console", "Courier New", monospace; */
+  font-family: 'Rubik';
+}
+
+hr {
+  color: whitesmoke;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
-/* .container {
-    width: 100%;
-    max-width: 700px;
-
-} */
 
 
 .navbar {
@@ -27,24 +35,24 @@ body {
   font-size: 20px;
 }
 
-h2 {
-   text-align: center;
-}
+
 
 
 .navbar span:hover {
-    color: #e50053;
+    /* color: #f58f7c; */
+    color: #7395ae;
 }
 
 /* Create a right-aligned (split) link inside the navigation bar */
 .navbar a.split {
   float: right;
-  color: white;
+  color: whitesmoke;
 }
   
   /* Add a color to the active/current link */
-.navbar a.active {
-    color: #e50053;
+.navbar a.active  {
+  color: #7395ae;
+    
 }
 
 
@@ -54,16 +62,56 @@ h2 {
   color: whitesmoke;
 }
 
+
+
+
+
+.skills {
+  text-align: center;
+  color: whitesmoke;
+}
+
+
+.skills p{
+  text-align: center;
+  color: whitesmoke;
+}
+
+
+
 .center {
   text-align: center;
 }
 
 .links {
   text-align: center;
+  color: #7395ae;
+  font-size: 20px;
+
+}
+
+
+
+
+.projects {
+  color: whitesmoke
+}
+
+.projects a {
+  color: #7395ae;
+}
+
+
+
+
+.experience {
   color: whitesmoke;
-
 }
 
-.links span:hover {
-  color: #e50053;
+.experience span {
+  font-size: 18px;
 }
+
+
+
+
