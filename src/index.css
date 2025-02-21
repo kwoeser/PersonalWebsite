@@ -148,10 +148,67 @@ a:hover {
 
 /* Work Section */
 .work-section {
-  margin-top: 40px;
+  margin-top: 75px;
 }
 
-.section-title {
-  font-size: 24px;
-  font-weight: bold;
+
+/* Work/Education Tabs Container */
+.tabs-container {
+  /* width: 100%; */
+  /* max-width: 600px; */
+  
+  margin: 20px auto;
+  background: #222;
+  padding: 20px;
+  border-radius: 8px;
 }
+
+/* Work/Education Tab Buttons */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background: #181818;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.tab-button.active {
+  /* background: #8696FE;  */
+  background: #757eca; 
+}
+
+/* Tab Content */
+.tab-content {
+  background: #181818;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: white;
+}
+
+/* Work & Education Entries */
+.work-entry, .education-entry {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.work-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+  background-color: white;
+}
+

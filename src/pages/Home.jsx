@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar"; // Import Navbar
 import { motion } from "framer-motion";
 import "../index.css"; // Import global CSS
 import { MapPin, Linkedin , Github, Download, Mail  } from "lucide-react";
+import WorkEducationTabs from "../components/WorkEducationTabs";
 
 function Home() {
   return (
@@ -71,12 +72,17 @@ function Home() {
 
 
         <motion.section
-          className="work-section"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          // className="work-section"
+          // initial={{ opacity: 0, y: 20 }}
+          // animate={{ opacity: 1, y: 0 }}
+          // transition={{ duration: 0.8, delay: 0.6 }}
+          key="work"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: 20 }}
+          transition={{ duration: 0.4, ease: "easeInOut" }}
         >
-          <h2 className="section-title">Work</h2>
+          {/* <h2 className="section-title">Work</h2>
           <WorkCard
             // time = ""
             role="Data Analyst Intern"
@@ -87,7 +93,14 @@ function Home() {
               "Utilized Python libraries such as Pandas and NumPy to help automate data analysis from multiple stations, achieving accurate and consistent results.",
               "Participated in data collection efforts, retrieving solar radiation data from various stations across Oregon."
             ]}
-          />
+          /> */}
+
+
+          <div className="work-section">
+            {/* <h2 className="section-title">Experience</h2> */}
+            <WorkEducationTabs /> {/* Work & Education Section */}
+          </div>
+
         </motion.section>
 
 
