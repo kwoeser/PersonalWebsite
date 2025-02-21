@@ -8,7 +8,7 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <div className="bg-gray-900 min-h-screen text-white font-sans">
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="container mx-auto px-4">
         <Routes>
           <Route path="/" element={<Home />} />
