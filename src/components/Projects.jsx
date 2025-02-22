@@ -1,5 +1,6 @@
 import React from "react";
 import "../index.css"; // Import global styles
+import {Github, Globe} from "lucide-react";
 
 
 // Project Descriptions
@@ -32,7 +33,7 @@ function Projects() {
   return (
     <section className="projects-section">
       <div className="projects-header">
-        <h2>Projects</h2>
+        <h2>Featured Projects</h2>
         <a href="/Projects" className="view-more">
           View More →
         </a>
@@ -59,12 +60,13 @@ function Projects() {
               <div className="project-buttons">
                 {project.liveDemo && (
                   <a href={project.liveDemo} className="project-button">
-                    🌐 Website
+                    <Globe/> Website
                   </a>
                 )}
+                
                 {project.sourceCode && (
                   <a href={project.sourceCode} className="project-button">
-                    💻 Source
+                    <Github /> Source
                   </a>
                 )}
               </div>

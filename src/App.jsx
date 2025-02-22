@@ -1,22 +1,25 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Projects from "./pages/Projects";
+import ProjectsPage from "./pages/ProjectsPage"; 
 import Favorites from "./pages/Favorites";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-gray-900 min-h-screen text-white font-sans">
-      {/* <Navbar /> */}
-      <div className="container mx-auto px-4">
+    <div className="page-container">
+      <Navbar />
+
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/favorites" element={<Favorites />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/Favorites" element={<Favorites />} />
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
-      </div>
+
+        
+      <Footer />
     </div>
   );
 }

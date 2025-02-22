@@ -24,7 +24,6 @@ body {
 .page-container {
   width: 800px; 
   padding: 20px;
-  box-shadow: 0 0 2px rgba(255, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,7 +106,7 @@ body {
   gap: 8px; 
 }
 
-/* Ensures the button content aligns properly */
+
 .btn-content {
   display: flex;
   align-items: center;
@@ -321,7 +320,7 @@ a:hover {
   /* text-align: center; */
 }
 
-/* Skills Container (flexbox for proper layout) */
+
 .skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -370,7 +369,7 @@ a:hover {
 
 .projects-header .view-more {
   color: #bbb;
-  font-size: 14px;
+  font-size: 20px;
   text-decoration: none;
 }
 
@@ -395,7 +394,7 @@ a:hover {
   width: 350px;
   text-align: left;
   padding-bottom: 10px;
-  transition: transform 0.3s ease-in-out;
+  /* transition: transform 0.3s ease-in-out; */
 }
 
 
@@ -472,37 +471,49 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 40px;
   border-top: 2px solid #333;
-
+  width: 90%;
+  position: relative;
+  bottom: 0;
 }
 
-/* Left Side - Custom Logo */
+
 .footer-left {
   display: flex;
   align-items: center;
 }
 
 .footer-logo {
-  width: 40px; 
-  transform: rotate(90deg);
+  width: 40px;
   height: auto;
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.footer-logo:hover {
+  transform: rotate(90deg);
 }
 
 /* Right Side - Social Icons */
 .footer-right {
   display: flex;
-  gap: 15px;
+  gap: 20px;
+  align-items: center;
 }
 
+/* Social Icons */
 .footer-icon {
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   color: white;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer-icon:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   color: #bbb;
 }
+
+

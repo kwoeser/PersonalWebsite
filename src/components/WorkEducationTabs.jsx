@@ -67,7 +67,7 @@ function WorkEducationTabs() {
 
               <div className="timeline-item">
                 <div className="timeline-icon">
-                  <img src="assets/o.jpg" alt="UO SRML" />
+                  <img src="assets/uo.jpg" alt="UO SRML" />
                 </div>
                 <div className="timeline-content">
                   <span className="timeline-date">Sept 2022 - June 2023</span>
@@ -94,11 +94,12 @@ function WorkEducationTabs() {
             >
               {/* Education Timeline */}
               <div className="timeline-item">
-                <div className="timeline-icon">🎓</div>
+                <div className="timeline-icon"><img src="assets/uo.jpg" alt="UO EDUCATION" /></div>
                 <div className="timeline-content">
                   <span className="timeline-date">2021 - 2025</span>
                   <h3>University of Oregon</h3>
-                  <p>Bachelor's Degree in Computer Science</p>
+                  <p>Bachelor's Degree</p>
+                  <p>Major in Computer Science, Minor in Math</p>
                 </div>
               </div>
             </motion.div>

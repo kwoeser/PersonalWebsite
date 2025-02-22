@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar"; 
 import { motion } from "framer-motion";
 import "../index.css"; 
 import { MapPin, Linkedin , Github, Download, Mail  } from "lucide-react";
@@ -9,8 +8,8 @@ import Footer from "../components/Footer";
 
 function Home() {
   return (
-    <div className="page-container"> {/* Single container for everything */}
-      <Navbar /> {/* Navbar stays inside the container */}
+    <div className="page-container"> 
+      {/* <Navbar />  */}
       
       <div className="home-content">
 
@@ -135,7 +134,7 @@ function Home() {
 
         {/* Footer */}
         <div>
-          <Footer />
+          {/* <Footer /> */}
         </div>
 
             
