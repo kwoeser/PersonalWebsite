@@ -1,10 +1,12 @@
-1. Initialize Vite Project
+Initialize Vite Project
 
-npm create vite@latest my-portfolio --template react
-cd my-portfolio
+npm create vite@latest portfolio --template react
+cd portfolio
 npm install
 
-2. Install Dependencies
+
+
+Dependencies
 
 npm install react-router-dom
 npm install lucide-react
@@ -13,6 +15,8 @@ npm install framer-motion
 
 
 
+
+NOT WORKING
     Tailwind:
     npm install -D tailwindcss@3
     npx tailwindcss init
