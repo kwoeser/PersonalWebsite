@@ -34,7 +34,7 @@ function Home() {
         >
           Student & Developer at the University of Oregon 
           <br/>
-          <MapPin className="map-icon"/>Gresham, OR
+          <MapPin className="map-icon"/>Portland, OR
 
         </motion.p>
 
