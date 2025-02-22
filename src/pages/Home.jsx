@@ -32,9 +32,14 @@ function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Student & Developer at the University of Oregon 
+          Software Engineer 
           <br/>
           <MapPin className="map-icon"/>Portland, OR
+          <p>
+          I'm a full-stack developer and student at the University of Oregon who enjoys working with
+          Python, JavaScript and backend systems to create clean and efficient web apps.
+          Outside of coding, I'm into music, gaming, and exploring new tech. 
+          </p>
 
         </motion.p>
 
@@ -102,6 +107,7 @@ function Home() {
                 "Flask",
                 "Docker",
                 "MongoDB",
+                "NumPy",
                 "SQL",
                 "Git",
                 "Linux",
