@@ -6,66 +6,103 @@ function WorkEducationTabs() {
   const [activeTab, setActiveTab] = useState("work");
 
   return (
+
     <div className="tabs-container">
-      {/* Tab Buttons */}
-      <div className="tabs">
+      {/* Full-width Tab Bar */}
+      <div className="tab-bar">
         <button
-          className={`tab-button ${activeTab === "work" ? "active" : ""}`}
+          className={`tab-option ${activeTab === "work" ? "active" : ""}`}
           onClick={() => setActiveTab("work")}
         >
           Work
         </button>
         <button
-          className={`tab-button ${activeTab === "education" ? "active" : ""}`}
+          className={`tab-option ${activeTab === "education" ? "active" : ""}`}
           onClick={() => setActiveTab("education")}
         >
           Education
         </button>
+        <motion.div
+          className="tab-indicator"
+          animate={{ x: activeTab === "work" ? 0 : "100%" }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+        />
       </div>
 
-      {/* Tab Content */}
+
+
+
+      {/* Timeline Section */}
       <div className="tab-content">
         <AnimatePresence mode="wait">
-        {activeTab === "work" ? (
-          <div className="work-experience">
-            {/* Work Timeline or Card Section */}
-            <div className="work-entry">
-              <img src="assets/cognizant.jpg" alt="Cognizant" className="work-logo" />
-              <div>
-                <span>June 2024 - August 2024</span>
-                <h3>Cognizant</h3>
-                <p>Generative AI Extern</p>
+          {activeTab === "work" ? (
+            <motion.div
+              key="work"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 20 }}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
+              className="timeline-container"
+            >
+
+                {/* FIX IMAGES */}
+              {/* Work Timeline */}
+              <div className="timeline-item">
+                <div className="timeline-icon">
+                  <img src="assets/cognizant.jpg" alt="Cognizant" />
+                </div>
+                <div className="timeline-content">
+                  <span className="timeline-date">June 2024 - August 2024</span>
+                  <h3>Cognizant</h3>
+                  <p>Generative AI Intern</p>
+
+                  {/* Description */}
+                  <ul className="job-description">
+                  <li>Assisted in fine-tuning generative AI models.</li>
+                  <li>Conducted model evaluations and adjusted hyperparameters to optimize performance.</li>
+                    
+                  </ul>
+                </div>  
               </div>
-            </div>
 
-            <div className="work-entry">
-              <img src="assets/o.jpg" alt="UO SRML" className="work-logo" />
-              <div>
-                <span>Sept 2022 - June 2023</span>
-                <h3>Solar Radiation Monitoring Lab</h3>
-                <p>Data Analyst</p>
-                
+              <div className="timeline-item">
+                <div className="timeline-icon">
+                  <img src="assets/o.jpg" alt="UO SRML" />
+                </div>
+                <div className="timeline-content">
+                  <span className="timeline-date">Sept 2022 - June 2023</span>
+                  <h3>University of Oregon SRML</h3>
+                  <p>Data Analyst Intern</p>
+                  
+                  {/* Description */}
+                  <ul className="job-description">
+                  <li>Developed scripts to automate data collection and ensure data integrity.</li>
+                  <li>Participated in data collection efforts, retrieving solar radiation data from various stations across Oregon.</li>
+                  </ul>
+
+                </div>
               </div>
-            </div>
-            {/* Add more work entries */}
-
-          </div>
-
-        ) : (
-
-          <div className="education-experience">
-            {/* Education Section */}
-            <div className="education-entry">
-              <h3>University of Oregon</h3>
-              <p>Bachelor's Degree in Computer Science</p>
-              <span>2021 - 2025</span>
-            </div>
-
-            {/* Add more education entries */}
-          </div>
-
-
-        )}
+            </motion.div>
+          ) : (
+            <motion.div
+              key="education"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -20 }}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
+              className="timeline-container"
+            >
+              {/* Education Timeline */}
+              <div className="timeline-item">
+                <div className="timeline-icon">🎓</div>
+                <div className="timeline-content">
+                  <span className="timeline-date">2021 - 2025</span>
+                  <h3>University of Oregon</h3>
+                  <p>Bachelor's Degree in Computer Science</p>
+                </div>
+              </div>
+            </motion.div>
+          )}
         </AnimatePresence>
       </div>
     </div>

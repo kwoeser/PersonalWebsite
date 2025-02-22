@@ -1,9 +1,11 @@
-import WorkCard from "../components/WorkCard";
-import Navbar from "../components/Navbar"; // Import Navbar
+import Navbar from "../components/Navbar"; 
 import { motion } from "framer-motion";
-import "../index.css"; // Import global CSS
+import "../index.css"; 
 import { MapPin, Linkedin , Github, Download, Mail  } from "lucide-react";
 import WorkEducationTabs from "../components/WorkEducationTabs";
+import Projects from "../components/Projects";
+import Footer from "../components/Footer";
+
 
 function Home() {
   return (
@@ -31,8 +33,8 @@ function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Software Engineer 
-          <br />
+          Student & Developer at the University of Oregon 
+          <br/>
           <MapPin className="map-icon"/>Gresham, OR
 
         </motion.p>
@@ -71,39 +73,72 @@ function Home() {
         </motion.div>
 
 
-        <motion.section
-          // className="work-section"
-          // initial={{ opacity: 0, y: 20 }}
-          // animate={{ opacity: 1, y: 0 }}
-          // transition={{ duration: 0.8, delay: 0.6 }}
-          key="work"
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 20 }}
-          transition={{ duration: 0.4, ease: "easeInOut" }}
-        >
-          {/* <h2 className="section-title">Work</h2>
-          <WorkCard
-            // time = ""
-            role="Data Analyst Intern"
-            company="University of Oregon Solar Radiation Monitoring Lab"
-            
-            description={[
-              "Collaborated with faculty to develop data collection scripts ensuring data integrity.",
-              "Utilized Python libraries such as Pandas and NumPy to help automate data analysis from multiple stations, achieving accurate and consistent results.",
-              "Participated in data collection efforts, retrieving solar radiation data from various stations across Oregon."
-            ]}
-          /> */}
-
-
+        {/* Work & Education Section */}
+        <motion.section>
+          
           <div className="work-section">
-            {/* <h2 className="section-title">Experience</h2> */}
-            <WorkEducationTabs /> {/* Work & Education Section */}
+            <WorkEducationTabs /> 
           </div>
 
         </motion.section>
 
 
+        <motion.section
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.4 }}
+        >
+        <div>
+          {/* Skills Section */}
+          <section className="skills-section">
+            <h2 className="section-title">Skills</h2>
+            <div className="skills-container">
+
+              {[
+                "Python",
+                "JavaScript",
+                "React",
+                "Node.js",
+                "Express",
+                "Flask",
+                "Docker",
+                "MongoDB",
+                "SQL",
+                "Git",
+                "Linux",
+                "Scikit-learn",
+                
+              ].map((skill, index) => (
+                <span key={index} className="skill-tag">
+                  {skill}
+                </span>
+              ))}
+              
+            </div>
+          </section>
+        </div>
+        </motion.section>
+        
+
+
+        <motion.section
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.4 }}
+        >
+        <div>
+          {/* Projects Section */}
+          <Projects />
+        </div>
+        </motion.section>
+
+
+        {/* Footer */}
+        <div>
+          <Footer />
+        </div>
+
+            
       </div>
     </div>
   );

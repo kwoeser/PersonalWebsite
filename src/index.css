@@ -1,24 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
 
-/* Ensure full height and dark background */
 body {
   margin: 0;
   padding: 0;
   background-color: #121212; 
-  color: white;
+  color: var(--white);
   font-family: 'Nunito', sans-serif;
   display: flex;
-  justify-content: center; /* Centers everything */
+  justify-content: center; 
   align-items: center;
-  /* min-height: 100vh; */
+}
+
+
+
+/* CHANGE ALL MY COLORS HERE INSTEAD FOR ORGINISNAD */
+:root {
+  --white: #fff
 }
 
 
 
 /* This container holds both the Navbar and Home page */
 .page-container {
-  width: 800px; /* Fixed width for everything */
-  /* background-color: #181818;  */
+  width: 800px; 
   padding: 20px;
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.1);
   display: flex;
@@ -32,7 +36,7 @@ body {
   width: 100%;
   display: flex;
   margin-bottom: -10px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 /* Navbar Links */
@@ -43,7 +47,7 @@ body {
 }
 
 .nav-item {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-size: 18px;
   transition: 0.3s;
@@ -53,6 +57,12 @@ body {
   color: #aaa;
 }
 
+
+
+
+
+
+
 /* Home Page Content */
 .home-content {
   /* text-align: center; */
@@ -60,20 +70,19 @@ body {
   margin-top: 20px;
 }
 
-/* Title */
 .title {
   font-size: 50px;
   font-weight: bold;
 }
 
-/* Description */
+
 .description {
   margin-top: -20px;
   font-size: 24px;
   color: #b0b0b0;
 }
 
-/* Buttons */
+
 .buttons {
   margin-top: 30px;
   display: flex;
@@ -87,7 +96,7 @@ body {
   background: #1e1e1e;
   padding: 12px 24px;
   border: none;
-  color: white;
+  color: #fff;
   font-size: 16px;
   border-radius: 8px;
   cursor: pointer;
@@ -104,10 +113,10 @@ body {
   align-items: center;
   gap: 8px;
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 
-/* Hover effect */
+
 .btn:hover {
   background: #333;
   transform: scale(1.05);
@@ -136,13 +145,17 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 
-/* Change color on hover */
+
 a:hover {
   color: #aaa; 
 }
+
+
+
+
 
 
 
@@ -152,63 +165,344 @@ a:hover {
 }
 
 
-/* Work/Education Tabs Container */
-.tabs-container {
-  /* width: 100%; */
-  /* max-width: 600px; */
-  
-  margin: 20px auto;
-  background: #222;
-  padding: 20px;
-  border-radius: 8px;
-}
 
-/* Work/Education Tab Buttons */
-.tabs {
+/* Full-Width Tab Bar */
+.tab-bar {
   display: flex;
-  justify-content: center;
-  gap: 15px;
+  background: #3b4046;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
-.tab-button {
-  padding: 10px 20px;
+/* Tab Options */
+.tab-option {
+  flex: 1; 
+  padding: 12px 0;
   font-size: 16px;
+  text-align: center;
   border: none;
-  background: #181818;
-  color: white;
+  background: transparent;
+  color: #fff;
   cursor: pointer;
-  border-radius: 5px;
-  transition: background 0.3s ease;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease-in-out;
+  font-weight: bold;
 }
 
-.tab-button.active {
-  /* background: #8696FE;  */
-  background: #757eca; 
+
+/* Highlight Active Tab */
+.tab-option.active {
+  color: #181818; 
+  font-weight: bold;
+}
+
+/* Sliding Tab */
+.tab-indicator {
+  position: absolute;
+  width: 50%; 
+  height: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  z-index: 1;
 }
 
 /* Tab Content */
 .tab-content {
   background: #181818;
   padding: 20px;
-  border-radius: 5px;
-  margin-top: 10px;
-  color: white;
+  border-radius: 12px;
+  border-color: #fff;
+  margin-top: 20px;
+  color: #fff;
 }
 
-/* Work & Education Entries */
-.work-entry, .education-entry {
+
+
+
+/* Timeline Container */
+.timeline-container {
+  position: relative;
+  /* margin-top: 20px; */
+  height: 100%;
+}
+
+/* Vertical Timeline Line */
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #555;
+}
+
+/* Timeline Item */
+.timeline-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 10px;
-  border-bottom: 1px solid #333;
+  /* margin-bottom: 20px; */
+  position: relative;
 }
 
-.work-logo {
+/* Timeline Icon */
+.timeline-icon {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin-bottom: 50px;
-  background-color: white;
+  overflow: hidden;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 20px;
 }
 
+.timeline-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Timeline Content */
+.timeline-content {
+  background: #181818;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-left: 50px;
+  color: #fff;
+  /* max-width: 800px; */
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.timeline-content p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.timeline-date {
+  font-size: 12px;
+  color: #888;
+}
+
+
+/* Description */
+.job-description {
+  margin-top: 8px;
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.job-description li {
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+/* Skills Section */
+.skills-section {
+  margin-top: 40px;
+  /* text-align: center; */
+}
+
+/* Skills Container (flexbox for proper layout) */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  gap: 12px;
+  margin-top: 15px;
+}
+
+
+.skill-tag {
+  background: #333;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: #555;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+/* Projects Section */
+.projects-section {
+  margin-top: 50px;
+  text-align: center;
+  /* padding: 20px; */
+}
+
+/* Header */
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 20px;
+}
+
+.projects-header .view-more {
+  color: #bbb;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.projects-header .view-more:hover {
+  color: white;
+}
+
+/* Project Cards Container */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 75px;
+}
+
+/* Project Card */
+.project-card {
+  background: #181818;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 350px;
+  text-align: left;
+  padding-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.project-image {
+  width: 100%;
+  height: 200px;
+}
+
+/* Project Content */
+.project-content {
+  padding: 15px;
+}
+
+.project-content h3 {
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+.project-content p {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 10px;
+}
+
+/* Project Tags */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.project-tag {
+  background: #222;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* Project Buttons */
+.project-buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.project-button {
+  background: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.project-button:hover {
+  background: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-top: 2px solid #333;
+
+}
+
+/* Left Side - Custom Logo */
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 40px; 
+  transform: rotate(90deg);
+  height: auto;
+}
+
+/* Right Side - Social Icons */
+.footer-right {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-icon {
+  width: 24px;
+  height: 24px;
+  color: white;
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer-icon:hover {
+  transform: scale(1.1);
+  color: #bbb;
+}
