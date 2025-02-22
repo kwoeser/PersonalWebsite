@@ -36,6 +36,14 @@ function ProjectsPage() {
       sourceCode: "https://github.com/kwoeser/PersonalWebsite",
     },
 
+    {
+      title: "Easy A",
+      description:
+      "Web based app designed to help students analyze the grading history of courses and instructors. Students can use historical grade data to compare grading distributions and make informed decisions about which classes and instructors to choose.",
+      image: "assets/easyA.png",
+      tags: ["Python", "JavaScript", "AJAX", "BeautifulSoup", "MongoDB", "Docker", "Git"],
+      sourceCode: "https://github.com/kwoeser",
+    },
 
     {
       title: "Gym App",
@@ -48,14 +56,7 @@ function ProjectsPage() {
     },
 
 
-    {
-      title: "Easy A",
-      description:
-      "Web based app designed to help students analyze the grading history of courses and instructors. Students can use historical grade data to compare grading distributions and make informed decisions about which classes and instructors to choose.",
-      image: "assets/easyA.png",
-      tags: ["Python", "JavaScript", "AJAX", "BeautifulSoup", "MongoDB", "Docker", "Git"],
-      sourceCode: "https://github.com/kwoeser",
-    },
+   
 
 
    
