@@ -34,10 +34,10 @@ function Projects() {
     <section className="projects-section">
       <div className="projects-header">
         <h2>Featured Projects</h2>
-        <a href="/Projects" className="view-more">
+        {/* <a href="/Projects" className="view-more">
           View More →
-        </a>
-        {/* <Link to="/Projects" className="view-more">View More →</Link> */}
+        </a> */}
+        <Link to="/Projects" className="view-more"><a href="/Projects" className="view-more">View More →</a></Link>
       </div>
 
       <div className="projects-container">
