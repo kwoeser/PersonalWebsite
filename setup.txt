@@ -1,4 +1,4 @@
-Initialize Vite Project
+Initialized with Vite 
 
 npm create vite@latest portfolio --template react
 cd portfolio
@@ -11,6 +11,8 @@ Dependencies
 npm install react-router-dom
 npm install lucide-react
 npm install framer-motion
+npm install @emailjs/browser
+
 
 
 
