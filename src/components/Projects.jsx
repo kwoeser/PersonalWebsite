@@ -1,7 +1,7 @@
 import React from "react";
 import "../index.css"; // Import global styles
 import {Github, Globe} from "lucide-react";
-
+import { Link } from "react-router-dom";
 
 // Project Descriptions
 const projects = [
@@ -34,9 +34,10 @@ function Projects() {
     <section className="projects-section">
       <div className="projects-header">
         <h2>Featured Projects</h2>
-        <a href="/Projects" className="view-more">
+        {/* <a href="/Projects" className="view-more">
           View More →
-        </a>
+        </a> */}
+        <Link to="/Projects" className="view-more">View More →</Link>
       </div>
 
       <div className="projects-container">
