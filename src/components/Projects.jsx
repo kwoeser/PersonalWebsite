@@ -37,7 +37,7 @@ function Projects() {
         {/* <a href="/Projects" className="view-more">
           View More →
         </a> */}
-        <Link to="/Projects" className="view-more"><a href="/Projects" className="view-more">View More →</a></Link>
+        <Link to="/Projects" className="view-more">View More →</Link>
       </div>
 
       <div className="projects-container">
