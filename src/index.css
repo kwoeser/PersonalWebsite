@@ -23,6 +23,7 @@ body {
 /* This container holds both the Navbar and Home page */
 .page-container {
   width: 800px; 
+  /* width: 62%; */
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -34,16 +35,20 @@ body {
 .navbar {
   width: 100%;
   display: flex;
-  margin-bottom: -10px;
-  /* margin-top: 10px; */
+  /* margin-bottom: -10px; */
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-/* Navbar Links */
+
 .nav-links {
   display: flex;
-  justify-content: space-between;
   gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
 
 .nav-item {
   color: #fff;
@@ -76,6 +81,7 @@ body {
 
 
 .description {
+
   margin-top: -20px;
   font-size: 24px;
   color: #b0b0b0;
@@ -99,6 +105,7 @@ body {
 .btn {
   background: #1e1e1e;
   padding: 12px 24px;
+  /* padding: 14px 20px; */
   border: none;
   color: #fff;
   font-size: 16px;
@@ -106,10 +113,12 @@ body {
   cursor: pointer;
   transition: 0.3s;
   display: flex;
+  /* min-width: 120px; */
   /* align-items: center; */
   /* justify-content: center;  */
   gap: 8px; 
 }
+
 
 
 .btn-content {
@@ -265,6 +274,11 @@ a:hover {
   position: absolute;
   left: 0;
   top: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .timeline-icon img {

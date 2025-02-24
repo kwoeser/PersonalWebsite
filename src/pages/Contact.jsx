@@ -69,7 +69,7 @@ function Contact() {
         </div>
         <textarea
           name="message"
-          placeholder="Leave feedback about the site, career opportunities or just to say hello etc."
+          placeholder="Your Message "
           value={formData.message}
           onChange={handleChange}
           required
