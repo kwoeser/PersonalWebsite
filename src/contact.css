@@ -8,10 +8,10 @@
 }
 
 .contact-title {
+  display: flex;
+
   font-size: 50px;
   font-weight: bold;
-  text-align: left;
-  font-size: 50px;
   margin-left: -175px;
 }
 
