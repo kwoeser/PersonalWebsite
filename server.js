@@ -11,6 +11,10 @@ const CSV_FILE = "./profile.csv";
 
 app.use(cors())
 
+let cachedMovies = null; // Store cached movie data
+let lastFetchTime = 0; // Track last fetch time
+const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes cache
+
 
 async function getMovieDetails(shortUrl) {
     try {
@@ -87,33 +91,44 @@ async function getMovieDetails(shortUrl) {
 // Read and parse the CSV file
 async function readFavoritesFromCSV() {
   return new Promise((resolve, reject) => {
-    const movies = [];
-    fs.createReadStream(CSV_FILE)
-      .pipe(csv())
-      .on("data", (row) => {
-        if (row["Favorite Films"]) {
-          const movieUrls = row["Favorite Films"].split(", ").map((url) => url.trim());
-          movies.push(...movieUrls);
-        }
-      })
-      .on("end", async () => {
-
-        // Fetch movie details for each favorite film
-        const movieDetails = await Promise.all(movies.map(getMovieDetails));
-        resolve(movieDetails);
-      })
-      .on("error", (error) => reject(error));
+      const movies = [];
+      fs.createReadStream(CSV_FILE)
+          .pipe(csv())
+          .on("data", (row) => {
+              if (row["Favorite Films"]) {
+                  const movieUrls = row["Favorite Films"].split(", ").map((url) => url.trim());
+                  movies.push(...movieUrls);
+              }
+          })
+          .on("end", async () => {
+              try {
+                  const movieDetails = await Promise.all(movies.map(getMovieDetails));
+                  resolve(movieDetails);
+              } catch (error) {
+                  reject(error);
+              }
+          })
+          .on("error", (error) => reject(error));
   });
 }
 
 // API endpoint, http://localhost:4000/letterboxd-favorites
 app.get("/letterboxd-favorites", async (req, res) => {
+  const now = Date.now();
+
+  if (cachedMovies && now - lastFetchTime < CACHE_DURATION) {
+      console.log("Serving cached movies");
+      return res.json({ movies: cachedMovies });
+  }
+
   try {
-    const movies = await readFavoritesFromCSV();
-    res.json({ movies });
+      const movies = await readFavoritesFromCSV();
+      cachedMovies = movies;
+      lastFetchTime = now;
+      res.json({ movies });
   } catch (error) {
-    console.error("Error processing favorites:", error);
-    res.status(500).json({ error: "Failed to retrieve favorites" });
+      console.error("Error processing favorites:", error);
+      res.status(500).json({ error: "Failed to retrieve favorites" });
   }
 });
 
