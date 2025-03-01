@@ -10,7 +10,7 @@
 .movies-header {
     display: flex;
     align-items: center;
-    width: 96%;
+    width: 100%;
 }
 
 .movies-header h2 {

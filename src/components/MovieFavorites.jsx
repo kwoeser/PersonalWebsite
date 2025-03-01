@@ -26,7 +26,7 @@ const MovieFavorites = () => {
       <h1 className="header">favorites</h1>
       <div className="movies-header">
         <h2>movies </h2>
-        <a href="https://letterboxd.com/bkarma/" target="_blank" rel="noopener noreferrer" className="letterboxd-link"> letterboxd</a>
+        <a href="https://letterboxd.com/bkarma/" target="_blank" rel="noopener noreferrer" className="letterboxd-link"> letterboxd →</a>
       </div>
 
       {loading ? (
