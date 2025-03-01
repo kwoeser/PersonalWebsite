@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
-import "../MovieFavorites.css"; // Import CSS styles
+import "../movies.css"; 
 
 const MovieFavorites = () => {
   const [movies, setMovies] = useState([]);
 
+  // Grab letterbox favorites, maybe use react query
   useEffect(() => {
     const fetchMovies = async () => {
       try {
@@ -18,21 +19,28 @@ const MovieFavorites = () => {
     fetchMovies();
   }, []);
 
-  return (
-    <div className="movie-container">
-      <h2 className="movie-title">Movies</h2>
-      <a href="https://letterboxd.com/bkarma/">LetterBox</a>
 
-      <div className="movie-list">
-        {movies.map((movie, index) => (
-          <div key={index} className="movie-card">
-            <a href={movie.url} target="_blank" rel="noopener noreferrer">
-              <img className="movie-poster" src={movie.poster} alt={movie.title} />
-            </a>
-            <p className="movie-name">{movie.title}</p>
-          </div>
-        ))}
-      </div>
+  return (
+    
+    <div className="movie-container">
+
+        <h1 className="header">favorites</h1>
+        <div className="movies-header">
+            <h2>movies</h2>
+            <a href="https://letterboxd.com/bkarma/" target="_blank" rel="noopener noreferrer" className="letterboxd-link">letterboxd</a>
+        </div>
+
+        <div className="movie-list">
+                {movies.map((movie, index) => (
+                <div key={index} className="movie-card">
+                    <a href={movie.url} target="_blank" rel="noopener noreferrer">  
+                        <img className="movie-poster" src={movie.poster} alt={movie.title} />
+                    </a>
+                    <p className="movie-name">{movie.title}</p>
+                </div>
+                ))}
+        </div>
+        
     </div>
   );
 };

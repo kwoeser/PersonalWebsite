@@ -1,6 +1,5 @@
 .projects-page {
   text-align: center;
-  padding: 40px 20px;
 }
 
 
@@ -8,7 +7,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
 }
 
 
@@ -37,7 +35,7 @@
 
 .project-content h3 {
   font-size: 18px;
-  margin-bottom: 5px;
+
 }
 
 .project-content p {
@@ -91,5 +89,6 @@
   text-align: left;
   font-size: 50px;
   font-weight: bold;
-  margin-left: -20px;
+
+  
 }

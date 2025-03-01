@@ -1,13 +1,15 @@
 
 import MovieFavorites from "../components/MovieFavorites";
-
+import Songs from "../components/Songs";
 
 function Favorites() {
     return (
       <div>
-        <h1>Favorites</h1>
+        
 
         <MovieFavorites/>
+
+        <Songs/>
       </div>
     );
   }

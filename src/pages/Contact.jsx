@@ -1,6 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import "../contact.css"; // Import the CSS file
+import { div } from "framer-motion/client";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -45,7 +46,7 @@ function Contact() {
 
   return (
     <section className="contact-section">
-      <h2 className="contact-title">Contact me</h2>
+      <h2 className="contact-title">contact me</h2>
       <form onSubmit={handleSubmit} className="contact-form">
         <div className="input-group">
           <input

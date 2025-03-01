@@ -1,0 +1,72 @@
+.movie-container {
+    flex-wrap: wrap;
+}
+
+.header {
+    font-size: 50px;
+    margin-top: 60px; 
+}
+
+.movies-header {
+    display: flex;
+    align-items: center;
+    width: 96%;
+}
+
+.movies-header h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.letterboxd-link {
+    margin-top: 18px;
+    margin-left: auto; 
+    font-size: 20px;
+    color: #bbb;
+    text-decoration: none;
+}
+
+.letterboxd-link:hover {
+    color: white;
+}
+
+  
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+ }
+  
+/* Individual Movie Card */
+.movie-card {
+    width: 250px;
+    text-align: center;
+    border-radius: 12px;
+    padding: 15px;
+}
+  
+
+  
+/* Movie Poster */
+.movie-poster {
+    width: 220px;
+    height: 320px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.movie-poster:hover {
+    transform: scale(1.05);
+}
+  
+/* Movie Title Text */
+.movie-name {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+  

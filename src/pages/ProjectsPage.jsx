@@ -78,7 +78,7 @@ function ProjectsPage() {
         transition={{ duration: 0.5 }}
       >
 
-        <h2 className="project-title">Projects</h2>
+        <h2 className="project-title">projects</h2>
 
         <div className="projects-container">
           {projects.map((project, index) => (

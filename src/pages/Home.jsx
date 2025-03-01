@@ -137,10 +137,6 @@ function Home() {
         </motion.section>
 
 
-        {/* Footer */}
-        <div>
-          {/* <Footer /> */}
-        </div>
 
             
       </div>
