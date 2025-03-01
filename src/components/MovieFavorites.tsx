@@ -8,7 +8,8 @@ const MovieFavorites = () => {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const response = await fetch("http://localhost:4000/letterboxd-favorites");
+        // const response = await fetch("http://localhost:4000/letterboxd-favorites");
+        const response = await fetch("https://personalwebsite-z2n0.onrender.com/letterboxd-favorites");
         const data = await response.json();
         setMovies(data.movies);
       } catch (error) {
