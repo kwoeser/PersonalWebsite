@@ -1,9 +1,10 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import "../contact.css"; // Import the CSS file
-import { div } from "framer-motion/client";
+import "../contact.css"; 
+
 
 function Contact() {
+  // message will send with the senders name, email, and a message to karmawoeser1@gmail.com
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -25,8 +26,8 @@ function Contact() {
       message: formData.message,
     };
 
-    emailjs
-      .send(
+    // emailjs api
+    emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         templateParams,

@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "../projects_page.css"; // Import global styles
-import { Github, Globe } from "lucide-react"; // Icons for buttons
+import "../projects_page.css"; 
+import { Github, Globe } from "lucide-react"; 
 import "../index.css"; 
 
 function ProjectsPage() {
@@ -56,10 +56,9 @@ function ProjectsPage() {
     },
 
 
-   
+    // Change gym app and add pacman ai
 
 
-   
 
 
 
@@ -94,6 +93,7 @@ function ProjectsPage() {
                 alt={project.title} 
                 className="project-image"
               />
+
               <div className="project-content">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
@@ -104,14 +104,16 @@ function ProjectsPage() {
                     </span>
                   ))}
                 </div>
+                
+
                 <div className="project-buttons">
                   {project.liveDemo && (
-                    <a href={project.liveDemo} className="project-button">
+                    <a target="_blank" rel="noopener noreferrer" href={project.liveDemo} className="project-button">
                       <Globe /> Website
                     </a>
                   )}
                   {project.sourceCode && (
-                    <a href={project.sourceCode} className="project-button">
+                    <a target="_blank" rel="noopener noreferrer" href={project.sourceCode} className="project-button">
                       <Github /> Source
                     </a>
                   )}

@@ -60,13 +60,13 @@ function Projects() {
 
               <div className="project-buttons">
                 {project.liveDemo && (
-                  <a href={project.liveDemo} className="project-button">
+                  <a target="_blank" rel="noopener noreferrer" href={project.liveDemo} className="project-button">
                     <Globe/> Website
                   </a>
                 )}
                 
                 {project.sourceCode && (
-                  <a href={project.sourceCode} className="project-button">
+                  <a target="_blank" rel="noopener noreferrer" href={project.sourceCode} className="project-button">
                     <Github /> Source
                   </a>
                 )}

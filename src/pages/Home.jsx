@@ -57,17 +57,17 @@ function Home() {
             </button>
           </a>
 
-          <a href="https://www.linkedin.com/in/karma-woeser-b83869249/">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/karma-woeser-b83869249/">
             <button className="btn"><Linkedin /></button>
           </a>
 
-          <a href="https://github.com/kwoeser">
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/kwoeser">
             <button className="btn">
               <Github />
             </button>
           </a>
 
-          <a href="mailto:karmawoeser1@gmail.com" className="btn-content">
+          <a target="_blank" rel="noopener noreferrer" href="mailto:karmawoeser1@gmail.com" className="btn-content">
             <button className="btn">
                 <Mail className="mail-icon" />       
             </button>
