@@ -1,4 +1,3 @@
-
 Dependencies
 
 npm install react-router-dom
@@ -6,15 +5,7 @@ npm install lucide-react
 npm install framer-motion
 npm install @emailjs/browser
 
-npm add rss-parser
 
 
 
 
-
-
-
-NOT WORKING
-    Tailwind:
-    npm install -D tailwindcss@3
-    npx tailwindcss init
