@@ -497,12 +497,11 @@ img {
   border-top: 2px solid #333;
   width: 90%;
   position: relative;
-  bottom: 0;
+  /* bottom: 0; */
 }
 
 
 .footer-left {
-  display: flex;
   align-items: center;
 }
 
@@ -523,6 +522,7 @@ img {
   display: flex;
   gap: 20px;
   align-items: center;
+  /* margin-bottom: 10px; */
 }
 
 /* Social Icons */
