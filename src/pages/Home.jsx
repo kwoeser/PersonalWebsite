@@ -3,13 +3,13 @@ import "../index.css";
 import { MapPin, Linkedin , Github, Download, Mail  } from "lucide-react";
 import WorkEducationTabs from "../components/WorkEducationTabs";
 import Projects from "../components/Projects";
-import Footer from "../components/Footer";
+
 
 
 function Home() {
   return (
     <div className="page-container"> 
-      {/* <Navbar />  */}
+ 
       
       <div className="home-content">
 
@@ -103,14 +103,15 @@ function Home() {
                 "React",
                 "Node.js",
                 "Express",
+                "Tailwind CSS",
                 "Flask",
                 "Docker",
                 "MongoDB",
-                "NumPy",
-                "SQL",
+                "MySQL",
                 "Git",
                 "Linux",
-                "Scikit-learn",
+                "NumPy",
+                "PyTorch",
                 
               ].map((skill, index) => (
                 <span key={index} className="skill-tag">
