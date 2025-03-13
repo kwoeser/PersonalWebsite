@@ -53,7 +53,7 @@ const hardcodedBooks = [
 const hardcodedGames = [
     {
       title: "Elden Ring",
-      poster: "https://m.media-amazon.com/images/M/MV5BZGQxMjYyOTUtNjYyMC00NzdmLWI4YmYtMDhiODU3Njc5ZDJkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+      poster: "https://m.media-amazon.com/images/M/MV5BMWNlMDBiYzYtMWMyMC00Zjc5LTlhMjItMjRlMzBmYmVkOGM0XkEyXkFqcGc@._V1_.jpg"
     },
     {
       title: "Uncharted 3: Drake's Deception",
