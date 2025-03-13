@@ -1,5 +1,5 @@
 import React from "react";
-import "../index.css"; // Import global styles
+import "../index.css"; 
 import { Linkedin, Github, Mail } from "lucide-react";
 
 function Footer() {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import "../index.css"; // Import global styles
+import "../index.css"; 
 
 function WorkEducationTabs() {
   const [activeTab, setActiveTab] = useState("work");

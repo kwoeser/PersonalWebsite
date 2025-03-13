@@ -1,6 +1,8 @@
 
 import MovieFavorites from "../components/MovieFavorites";
 import Songs from "../components/Songs";
+import Games from "../components/Games";
+import Books from "../components/Books";
 
 function Favorites() {
     return (
@@ -8,6 +10,8 @@ function Favorites() {
         
 
         <MovieFavorites/>
+        <Books/>
+        <Games/>
 
         <Songs/>
       </div>

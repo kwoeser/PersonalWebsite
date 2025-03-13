@@ -45,6 +45,15 @@ async function getMovieDetails(shortUrl) {
         "https://letterboxd.com/film/how-to-train-your-dragon/": "https://a.ltrbxd.com/resized/sm/upload/0r/r7/c6/7e/hIXX3IRFy0InUOmYeWjvhCAgQNj-0-1000-0-1500-crop.jpg?v=d158027eb4",
       };
 
+      // const TrainDragon = {
+      //   "https://letterboxd.com/film/how-to-train-your-dragon/": "https://a.ltrbxd.com/resized/sm/upload/0r/r7/c6/7e/hIXX3IRFy0InUOmYeWjvhCAgQNj-0-1000-0-1500-crop.jpg?v=d158027eb4",
+      // };
+
+      // const TrainDragon = {
+      //   "https://letterboxd.com/film/how-to-train-your-dragon/": "https://a.ltrbxd.com/resized/sm/upload/0r/r7/c6/7e/hIXX3IRFy0InUOmYeWjvhCAgQNj-0-1000-0-1500-crop.jpg?v=d158027eb4",
+      // };
+
+
       if (TokyoGodfathers[fullUrl]) {
         return { title: "Tokyo Godfathers (2003)", url: fullUrl, poster: TokyoGodfathers[fullUrl] };
       }
