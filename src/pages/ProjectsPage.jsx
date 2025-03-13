@@ -19,7 +19,7 @@ function ProjectsPage() {
     {
         title: "House Prices Predictor",
         description:
-        "Developed a machine learning model to predict house prices. Trained Random Forest and Gradient Boosting models and evaluated model performance with RMSE. Visualized accuracy via scatter plots, and optimized results by tuning hyperparameters with GridSearchCV.",
+        "Developed a machine learning model to predict house prices. Optimized Random Forest and Gradient Boosting models and evaluated model performance with RMSE. Visualized accuracy via scatter plots, and optimized results by tuning hyperparameters with GridSearchCV.",
         image: "assets/HOUSE-PRICE.png",
         tags: ["Python", "Pandas", "Scikit-learn", "Matplotlib"],
         sourceCode: "https://github.com/kwoeser/regression-house-prices",
@@ -28,13 +28,13 @@ function ProjectsPage() {
 
     {
       title: "Personal Portfolio Website",
-      description:
-      "I built this personal portfolio website to showcase my projects, skills, and work experience in an visually appealing format. ",
+      description: "Designed and developed a website to showcase projects, skills, experience, and personal favorites.",
       image: "assets/portf.png",
       tags: ["React", "CSS", "Vite", "React Router", "Framer Motion"],
       liveDemo: "https://kwoeser.netlify.app/",
-      sourceCode: "https://github.com/kwoeser/PersonalWebsite",
+      sourceCode: "https://github.com/kwoeser/PersonalWebsite"
     },
+    
 
     {
       title: "Easy A",
@@ -44,7 +44,16 @@ function ProjectsPage() {
       tags: ["Python", "JavaScript", "AJAX", "BeautifulSoup", "MongoDB", "Docker", "Git"],
       sourceCode: "https://github.com/kwoeser",
     },
+    {
+      title: "Article Curation Platform",
+      description:
+      "Worked in a team to build a React frontend, using React Query to optimize API requests with caching, background updates, and infinite pagination. Designed the Node.js backend with TS-rest API contracts, ensuring strict type API communication.",
+      image: "assets/ARTICLE.png",
+      tags: ["TypeScript", "React", "Node.js", "PostgreSQL", "Tailwind CSS", "Docker"],
+      sourceCode: "https://github.com/kwoeser",
+    },
 
+    
     {
       title: "Gym App",
       description:
@@ -54,6 +63,7 @@ function ProjectsPage() {
       liveDemo: "https://karmawoeser.netlify.app",
       sourceCode: "https://github.com/kwoeser",
     },
+    
 
 
     // Change gym app and add pacman ai

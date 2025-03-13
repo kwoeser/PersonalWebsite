@@ -18,7 +18,7 @@ const projects = [
     {
         title: "House Prices Predictor",
         description:
-        "Developed a machine learning model to predict house prices. Trained Random Forest and Gradient Boosting models and evaluated model performance with RMSE. Visualized accuracy via scatter plots, and optimized results by tuning hyperparameters with GridSearchCV.",
+        "Developed a machine learning model to predict house prices. Optimized Random Forest and Gradient Boosting models and evaluated model performance with RMSE. Visualized accuracy via scatter plots, and optimized results by tuning hyperparameters with GridSearchCV.",
         image: "assets/HOUSE-PRICE.png",
         tags: ["Python", "Pandas", "Scikit-learn", "Matplotlib"],
         sourceCode: "https://github.com/kwoeser/regression-house-prices",
