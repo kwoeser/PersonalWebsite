@@ -1,26 +1,49 @@
 import { useState, useEffect } from "react";
 import "../movies.css"; 
 
+const hardcodedMovies = [
+  {
+    title: "La Haine (1995)",
+    url: "https://letterboxd.com/film/la-haine/",
+    poster: "https://a.ltrbxd.com/resized/film-poster/5/1/6/8/4/51684-la-haine-0-1000-0-1500-crop.jpg?v=b6677cc136"
+  },
+  {
+    title: "Shaolin Soccer (2001)",
+    url: "https://letterboxd.com/film/shaolin-soccer/",
+    poster: "https://a.ltrbxd.com/resized/film-poster/4/5/0/2/5/45025-shaolin-soccer-0-1000-0-1500-crop.jpg?v=a071ce6617"
+  },
+  {
+    title: "Tokyo Godfathers (2003)",
+    url: "https://letterboxd.com/film/tokyo-godfathers/",
+    poster: "https://a.ltrbxd.com/resized/sm/upload/zl/no/np/nn/aY1q9dTGC8u8TUsAgnpJHsdAdJZ-0-1000-0-1500-crop.jpg?v=6bf4242f8d"
+  },
+  {
+    title: "How to Train Your Dragon (2010)",
+    url: "https://letterboxd.com/film/how-to-train-your-dragon/",
+    poster: "https://a.ltrbxd.com/resized/sm/upload/0r/r7/c6/7e/hIXX3IRFy0InUOmYeWjvhCAgQNj-0-1000-0-1500-crop.jpg?v=d158027eb4"
+  },
+];
+
 const MovieFavorites = () => {
-  const [movies, setMovies] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [movies, setMovies] = useState(hardcodedMovies);
+  const [loading, setLoading] = useState(false); 
 
-  useEffect(() => {
-    const fetchMovies = async () => {
-      try {
-        const response = await fetch("https://personalwebsite-z2n0.onrender.com/favorites");
-        // const response = await fetch("http://localhost:4000/favorites");
-        const data = await response.json();
-        setMovies(data.movies);
-      } catch (error) {
-          console.error("Error fetching favorites:", error);
-      } finally {
-          setLoading(false);
-      }
-    };
+  // Uncomment this later when integrating with backend
+  // useEffect(() => {
+  //   const fetchMovies = async () => {
+  //     try {
+  //       const response = await fetch("https://personalwebsite-z2n0.onrender.com/favorites");
+  //       const data = await response.json();
+  //       setMovies(data.movies);
+  //     } catch (error) {
+  //       console.error("Error fetching favorites:", error);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
 
-    fetchMovies();
-  }, []);
+  //   fetchMovies();
+  // }, []);
 
   return (
     <div className="movie-container">

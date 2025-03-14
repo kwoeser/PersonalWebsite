@@ -23,13 +23,16 @@ const Songs = () => {
 
 
   return (
-    <div className="songs-container">
-        <h1>songs</h1>
+    <div className="movie-container">
+      <div className="movies-header">
+        <h2>songs</h2>
+      </div>
         {/* <a href=""> spotify</a> */}
         <p>under construction</p>
         
         
     </div>
+    
   );
 };
 
