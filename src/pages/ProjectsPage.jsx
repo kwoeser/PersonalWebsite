@@ -101,7 +101,10 @@ function ProjectsPage() {
                 src={project.image} 
                 alt={project.title} 
                 className="project-image"
+                onClick={() => window.open(project.image, "_blank")} 
+                style={{ cursor: "pointer" }} 
               />
+
 
               <div className="project-content">
                 <h3>{project.title}</h3>
