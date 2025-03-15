@@ -19,21 +19,12 @@ function ProjectsPage() {
     {
         title: "House Prices Predictor",
         description:
-        "Developed a machine learning model to predict house prices. Optimized Random Forest and Gradient Boosting models and evaluated model performance with RMSE. Visualized accuracy via scatter plots, and optimized results by tuning hyperparameters with GridSearchCV.",
+        "Built a machine learning model to predict house prices and deployed it via a Flask API. Optimized Random Forest and Gradient Boosting models, improving accuracy with hyperparameter tuning and RMSE evaluation. Visualized results using scatter plots.",
         image: "assets/HOUSE-PRICE.png",
-        tags: ["Python", "Pandas", "Scikit-learn", "Matplotlib"],
+        tags: ["Python", "Flask", "Pandas", "Scikit-learn", "Matplotlib"],
         sourceCode: "https://github.com/kwoeser/regression-house-prices",
     },
 
-
-    {
-      title: "Personal Portfolio Website",
-      description: "Designed and developed a website to showcase projects, skills, experience, and personal favorites.",
-      image: "assets/portf.png",
-      tags: ["React", "CSS", "Vite", "React Router", "Framer Motion"],
-      liveDemo: "https://kwoeser.netlify.app/",
-      sourceCode: "https://github.com/kwoeser/PersonalWebsite"
-    },
     
     {
       title: "Article Curation Platform",
@@ -49,11 +40,18 @@ function ProjectsPage() {
       description:
       "Web based app designed to help students analyze the grading history of courses and instructors. Students can use historical grade data to compare grading distributions and make informed decisions about which classes and instructors to choose.",
       image: "assets/easyA.png",
-      tags: ["Python", "JavaScript", "AJAX", "BeautifulSoup", "MongoDB", "Docker", "Git"],
+      tags: ["Python", "Flask", "MongoDB", "JavaScript", "AJAX", "BeautifulSoup", "Docker"],
       sourceCode: "https://github.com/kwoeser",
     },
 
-
+    {
+      title: "Personal Portfolio Website",
+      description: "Designed and developed a website to showcase projects, skills, experience, and personal favorites.",
+      image: "assets/portf.png",
+      tags: ["React", "CSS", "Vite", "React Router", "Framer Motion"],
+      liveDemo: "https://kwoeser.netlify.app/",
+      sourceCode: "https://github.com/kwoeser/PersonalWebsite"
+    },
     
     {
       title: "Gym App",
