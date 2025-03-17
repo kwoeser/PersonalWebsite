@@ -36,7 +36,7 @@ function Home() {
           <br/>
           <MapPin className="map-icon"/>Portland, OR
           <p>
-          I'm a full-stack developer and student at the University of Oregon who enjoys working with
+          I'm a backend developer and student at the University of Oregon who enjoys working with
           Python, JavaScript and backend systems. 
           </p>
 
