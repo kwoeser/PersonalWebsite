@@ -41,7 +41,7 @@ function ProjectsPage() {
       "Web based app designed to help students analyze the grading history of courses and instructors. Students can use historical grade data to compare grading distributions and make informed decisions about which classes and instructors to choose.",
       image: "assets/easyA.png",
       tags: ["Python", "Flask", "MongoDB", "JavaScript", "AJAX", "BeautifulSoup", "Docker"],
-      sourceCode: "https://github.com/kwoeser",
+      sourceCode: "https://github.com/kwoeser/EasyA",
     },
 
     {
@@ -60,7 +60,7 @@ function ProjectsPage() {
       image: "assets/gym.png",
       tags: ["React", "Tailwind CSS", "Vite"],
       liveDemo: "https://karmawoeser.netlify.app",
-      sourceCode: "https://github.com/kwoeser",
+      sourceCode: "https://github.com/kwoeser/gymappp",
     },
     
 
