@@ -32,7 +32,7 @@ function ProjectsPage() {
       "Worked in a team to build a React frontend, using React Query to optimize API requests with caching, background updates, and infinite pagination. Designed the Node.js backend with TS-rest API contracts, ensuring strict type API communication.",
       image: "assets/ARTICLE.png",
       tags: ["TypeScript", "React", "Node.js", "PostgreSQL", "Tailwind CSS", "Docker"],
-      sourceCode: "https://github.com/kwoeser",
+      sourceCode: "https://github.com/kwoeser/Byte-sized-reads",
     },
     
     {
