@@ -23,9 +23,6 @@ function Footer() {
         <a href="mailto:karmawoeser1@gmail.com" target="_blank" rel="noopener noreferrer">
             <Mail className="footer-icon" />
         </a>
-
-
-
       </div>
     </footer>
   );

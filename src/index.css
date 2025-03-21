@@ -176,7 +176,7 @@ a:hover {
 
 /* Work Section */
 .work-section {
-  margin-top: 75px;
+  margin-top: 70px;
 }
 
 
@@ -184,7 +184,8 @@ a:hover {
 /* Full-Width Tab Bar */
 .tab-bar {
   display: flex;
-  background: #3b4046;
+  /* background: #3b4046; */
+  background: #333;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
@@ -493,11 +494,12 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
   border-top: 2px solid #333;
   width: 90%;
   position: relative;
-  /* bottom: 0; */
 }
 
 

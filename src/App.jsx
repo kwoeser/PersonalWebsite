@@ -8,8 +8,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
-
 function App() {
+
+
   return (
     
     <div className="page-container">
@@ -23,7 +24,9 @@ function App() {
           <Route path="/Projects" element={<ProjectsPage />} />
           <Route path="/Favorites" element={<Favorites />} />
           <Route path="/Contact" element={<Contact />} />
+
         </Routes>
+        
 
         
 

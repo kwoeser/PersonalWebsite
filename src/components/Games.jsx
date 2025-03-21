@@ -13,14 +13,14 @@ const hardcodedGames = [
     poster: "https://m.media-amazon.com/images/M/MV5BYmQzOThkZGItMzA1Yy00NDFkLWJkYjUtNzFkNjRlNzk1YmM1XkEyXkFqcGc@._V1_.jpg"
   },
   {
-    title: "Uncharted 3",
-    poster: "https://m.media-amazon.com/images/M/MV5BNzVkZTVlMDItYjI5Yy00NjQ5LWI4OWMtMjllYmIxMTUxZDVhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+    title: "Assassin's Creed II",
+    poster: "https://m.media-amazon.com/images/M/MV5BYzcwYjkwOTYtNTQyYi00NzYxLTg4MGUtZjg5YTdiOGE5NjUzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
   },
   {
     title: "Terraria",
     poster: "https://m.media-amazon.com/images/M/MV5BZWJkZWNkZDgtOTMzMS00NjlhLTk5MTEtZWFiMTQ0MzE4MzAyXkEyXkFqcGc@._V1_.jpg"
   }
-  // https://m.media-amazon.com/images/M/MV5BNzQzODQ3YzktNTM1Yy00NmNmLTk3NTItNGVlY2M1MzI4MjQ0XkEyXkFqcGc@._V1_.jpg
+  
 ];
 
 

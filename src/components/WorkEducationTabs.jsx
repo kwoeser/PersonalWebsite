@@ -7,7 +7,7 @@ function WorkEducationTabs() {
 
   return (
 
-    <div className="tabs-container">
+    <div>
       {/* Full-width Tab Bar */}
       <div className="tab-bar">
         <button

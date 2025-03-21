@@ -100,6 +100,7 @@ function Home() {
               {[
                 "Python",
                 "JavaScript",
+                "C",
                 "React",
                 "Node.js",
                 "Express",
