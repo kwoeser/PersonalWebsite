@@ -113,6 +113,7 @@ function Home() {
                 "Linux",
                 "NumPy",
                 "PyTorch",
+                "AWS"
                 
               ].map((skill, index) => (
                 <span key={index} className="skill-tag">

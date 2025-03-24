@@ -7,6 +7,24 @@ import "../index.css";
 function ProjectsPage() {
   const projects = [
     {
+      title: "Article Curation Platform",
+      description:
+      "Worked in a team to build a React frontend, using React Query to optimize API requests with caching, background updates, and infinite pagination. Designed the Node.js backend with TS-rest API contracts, ensuring strict type API communication.",
+      image: "assets/ARTICLE.png",
+      tags: ["TypeScript", "React", "Node.js", "PostgreSQL", "Tailwind CSS", "Docker", "AWS"],
+      liveDemo: "http://bytereads.duckdns.org:5173/",
+      sourceCode: "https://github.com/kwoeser/Byte-sized-reads",
+    },
+    {
+      title: "House Prices Predictor",
+      description:
+      "Built a machine learning model to predict house prices and deployed it via a Flask API. Optimized Random Forest and Gradient Boosting models, improving accuracy with hyperparameter tuning and RMSE evaluation. Visualized results using scatter plots.",
+      image: "assets/HOUSE-PRICE.png",
+      tags: ["Python", "Flask", "Pandas", "Scikit-learn", "Matplotlib"],
+      sourceCode: "https://github.com/kwoeser/regression-house-prices",
+  },
+
+    {
         title: "AI chatbot",
         description:
         "Developing a full-stack AI chatbot powered by Google Gemini AI. Built with React for the front end and Express & MongoDB for the back end. Integrated Clerk authentication to enable secure user sign-ups and logins.",
@@ -14,25 +32,6 @@ function ProjectsPage() {
         tags: ["React", "Express", "MongoDB", "Git", "Clerk API", "Google Gemini AI API"],
         liveDemo: "https://gem-clone-lilac.vercel.app/",
         sourceCode: "https://github.com/kwoeser/GemClone",
-    },
-
-    {
-        title: "House Prices Predictor",
-        description:
-        "Built a machine learning model to predict house prices and deployed it via a Flask API. Optimized Random Forest and Gradient Boosting models, improving accuracy with hyperparameter tuning and RMSE evaluation. Visualized results using scatter plots.",
-        image: "assets/HOUSE-PRICE.png",
-        tags: ["Python", "Flask", "Pandas", "Scikit-learn", "Matplotlib"],
-        sourceCode: "https://github.com/kwoeser/regression-house-prices",
-    },
-
-    
-    {
-      title: "Article Curation Platform",
-      description:
-      "Worked in a team to build a React frontend, using React Query to optimize API requests with caching, background updates, and infinite pagination. Designed the Node.js backend with TS-rest API contracts, ensuring strict type API communication.",
-      image: "assets/ARTICLE.png",
-      tags: ["TypeScript", "React", "Node.js", "PostgreSQL", "Tailwind CSS", "Docker"],
-      sourceCode: "https://github.com/kwoeser/Byte-sized-reads",
     },
     
     {
