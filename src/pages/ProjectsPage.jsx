@@ -9,7 +9,7 @@ function ProjectsPage() {
     {
       title: "Article Curation Platform",
       description:
-      "Worked in a team to build a React frontend, using React Query to optimize API requests with caching, background updates, and infinite pagination. Designed the Node.js backend with TS-rest API contracts, ensuring strict type API communication.",
+      "Worked on a team to develop a full-stack article curation platform using React, Node.js, and TS-rest, with type-safe APIs and optimized data fetching with React Query.",
       image: "assets/ARTICLE.png",
       tags: ["TypeScript", "React", "Node.js", "PostgreSQL", "Tailwind CSS", "Docker", "AWS"],
       liveDemo: "http://bytereads.duckdns.org:5173/",
@@ -18,7 +18,7 @@ function ProjectsPage() {
     {
       title: "House Prices Predictor",
       description:
-      "Built a machine learning model to predict house prices and deployed it via a Flask API. Optimized Random Forest and Gradient Boosting models, improving accuracy with hyperparameter tuning and RMSE evaluation. Visualized results using scatter plots.",
+      "Built a machine learning model to predict house prices and deployed it via a Flask API. Optimized Random Forest and Gradient Boosting models, improving accuracy with hyperparameter tuning and RMSE evaluation.",
       image: "assets/HOUSE-PRICE.png",
       tags: ["Python", "Flask", "Pandas", "Scikit-learn", "Matplotlib"],
       sourceCode: "https://github.com/kwoeser/regression-house-prices",
