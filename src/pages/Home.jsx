@@ -4,9 +4,8 @@ import { MapPin, Linkedin , Github, Download, Mail  } from "lucide-react";
 import WorkEducationTabs from "../components/WorkEducationTabs";
 import Projects from "../components/Projects";
 
-
-
 function Home() {
+
   return (
     <div className="page-container"> 
  
@@ -24,8 +23,6 @@ function Home() {
           {/* 👋 */}
         </motion.h1>
 
-
-     
         <motion.p
           className="description"
           initial={{ opacity: 0, y: 20 }}
@@ -50,10 +47,10 @@ function Home() {
           transition={{ duration: 0.7, delay: 0.4 }}
         >
           
-          <a href="/assets/RESUME.pdf" download>
+          <a target="_blank" rel="noopener noreferrer" href="/assets/RESUME.pdf">
             <button className="btn">
               <span className="btn-text">Resume</span>
-                <Download/>
+              <Download />
             </button>
           </a>
 
