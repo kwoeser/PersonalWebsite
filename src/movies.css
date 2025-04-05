@@ -52,8 +52,8 @@
   
 /* Movie Poster */
 .movie-poster {
-    width: 185px;
-    height: 260px;
+    width: 200px;
+    height: 270px;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
 }

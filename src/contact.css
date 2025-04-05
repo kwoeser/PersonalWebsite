@@ -2,7 +2,6 @@
   text-align: center;
   max-width: 600px;
   margin: auto;
-  /* padding: 40px 20px; */
   color: white;
   border-radius: 8px;
   padding-bottom: 45px;
@@ -11,10 +10,9 @@
 
 .contact-title {
   display: flex;
-
   font-size: 50px;
   font-weight: bold;
-  margin-left: -175px;
+  margin-left: -160px;
 }
 
 .contact-form {
@@ -38,6 +36,7 @@
   border-radius: 5px;
 }
 
+
 .textarea-field {
   height: 125px;
   padding: 12px;
@@ -59,7 +58,6 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s;
-
 }
 
 .send-button:hover {
@@ -71,5 +69,3 @@
   font-weight: bold;
   color: white;
 }
-
-

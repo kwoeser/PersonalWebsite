@@ -13,8 +13,8 @@ const hardcodedGames = [
     poster: "https://m.media-amazon.com/images/M/MV5BYmQzOThkZGItMzA1Yy00NDFkLWJkYjUtNzFkNjRlNzk1YmM1XkEyXkFqcGc@._V1_.jpg"
   },
   {
-    title: "Assassin's Creed II",
-    poster: "https://m.media-amazon.com/images/M/MV5BYzcwYjkwOTYtNTQyYi00NzYxLTg4MGUtZjg5YTdiOGE5NjUzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+    title: "Assassin's Creed Unity",
+    poster: "https://m.media-amazon.com/images/M/MV5BMDY1NmE5YzgtYTRiYS00ZDVlLTkxNDktYzU2YzIyZWE3NjQ2XkEyXkFqcGc@._V1_.jpg"
   },
   {
     title: "Terraria",
