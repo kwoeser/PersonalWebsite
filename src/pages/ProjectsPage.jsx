@@ -12,7 +12,7 @@ function ProjectsPage() {
       "Worked on a team to develop a full-stack article curation platform using React, Node.js, and TS-rest, with type-safe APIs and optimized data fetching with React Query.",
       image: "assets/ARTICLE.png",
       tags: ["TypeScript", "React", "Node.js", "PostgreSQL", "Tailwind CSS", "Docker", "AWS"],
-      liveDemo: "http://bytereads.duckdns.org:5173/",
+      liveDemo: "https://bytereads.duckdns.org/",
       sourceCode: "https://github.com/kwoeser/Byte-sized-reads",
     },
     {
