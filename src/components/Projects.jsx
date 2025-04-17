@@ -10,7 +10,7 @@ const projects = [
     description:
     "Worked on a team to develop a full-stack article curation platform using React, Node.js, and TS-rest, with type-safe APIs and optimized data fetching with React Query.",
     image: "assets/ARTICLE.png",
-    tags: ["TypeScript", "React", "Node.js", "React Query", "PostgreSQL", "Tailwind CSS", "Docker", "AWS"],
+    tags: ["TypeScript", "React", "Node.js", "Tailwind CSS", "React Query", "PostgreSQL", "Docker", "AWS"],
     liveDemo: "https://bytereads.duckdns.org/",
     sourceCode: "https://github.com/kwoeser/Byte-sized-reads",
     },
@@ -19,7 +19,7 @@ const projects = [
       description:
       "Developed an automated tool that generates detailed README templates for GitHub repositories. Uses GitHub OAuth for authentication and pulls repository metadata to dynamically create comprehensive documentation.",
       image: "assets/gitread.png",
-      tags: ["Python", "Flask", "React", "GitHub OAuth", "React Query", "Flask-Dance", "Flask-CORS"],
+      tags: ["Python", "Flask", "React", "GitHub OAuth", "React Query"],
       liveDemo: "https://gitread-five.vercel.app/",
       sourceCode: "https://github.com/kwoeser/gitread",
     },
