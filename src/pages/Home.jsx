@@ -105,7 +105,7 @@ function Home() {
                 "Flask",
                 "Docker",
                 "MongoDB",
-                "MySQL",
+                "PostgreSQL",
                 "Git",
                 "Linux",
                 "NumPy",
