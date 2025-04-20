@@ -5,41 +5,42 @@ import { Link } from "react-router-dom";
 
 // Project Descriptions
 const projects = [
-   {
+  {
     title: "ByteSized Reads",
     description:
-    "Worked on a team to develop a full-stack article curation platform using React, Node.js, and TS-rest, with type-safe APIs and optimized data fetching with React Query.",
+    "Site to discover and share articles. Users can create accounts, browse by topic and review content through a simple interface.",
     image: "assets/ARTICLE.png",
     tags: ["TypeScript", "React", "Node.js", "Tailwind CSS", "React Query", "PostgreSQL", "Docker", "AWS"],
     liveDemo: "https://bytereads.duckdns.org/",
     sourceCode: "https://github.com/kwoeser/Byte-sized-reads",
-    },
-    {
-      title: "GitRead",
-      description:
-      "Developed an automated tool that generates detailed README templates for GitHub repositories. Uses GitHub OAuth for authentication and pulls repository metadata to dynamically create comprehensive documentation.",
-      image: "assets/gitread.png",
-      tags: ["Python", "Flask", "React", "GitHub OAuth", "React Query"],
-      liveDemo: "https://gitread-five.vercel.app/",
-      sourceCode: "https://github.com/kwoeser/gitread",
-    },
-    {
-      title: "House Prices Predictor",
-      description:
-      "Built a machine learning model to predict house prices and deployed it via a Flask API. Optimized Random Forest and Gradient Boosting models, improving accuracy with hyperparameter tuning and RMSE evaluation.",
-      image: "assets/HOUSE-PRICE.png",
-      tags: ["Python", "Flask", "Pandas", "Scikit-learn", "Matplotlib"],
-      sourceCode: "https://github.com/kwoeser/regression-house-prices",
   },
-    {
-        title: "AI chatbot",
-        description:
-        "Developing a full-stack AI chatbot powered by Google Gemini AI. Built with React for the front end and Express & MongoDB for the back end. Integrated Clerk authentication to enable secure user sign-ups and logins.",
-        image: "assets/KARMA-AI.png",
-        tags: ["React", "Express", "MongoDB", "Git", "Clerk API", "Google Gemini API"],
-        liveDemo: "https://gem-clone-lilac.vercel.app/",
-        sourceCode: "https://github.com/kwoeser/GemClone",
-    },
+  {
+    title: "GitRead",
+    description:
+    "Helps developers generate README files by pulling in their GitHub repo info.",
+    image: "assets/gitread.png",
+    tags: ["Python", "Flask", "React", "GitHub OAuth", "React Query"],
+    liveDemo: "https://gitread-five.vercel.app/",
+    sourceCode: "https://github.com/kwoeser/gitread",
+  },
+  {
+    title: "House Prices Predictor",
+    description:
+    "App that predicts house prices based on real housing data. Enter details like square footage and number of rooms and get a quick estimate.",
+    image: "assets/HOUSE-PRICE.png",
+    tags: ["Python", "Flask", "Pandas", "Scikit-learn", "Matplotlib"],
+    sourceCode: "https://github.com/kwoeser/regression-house-prices",
+},
+
+  {
+      title: "AI chatbot",
+      description:
+      "Chatbot powered by Google Gemini. Still in development, with plans to support multiple LLMs.",
+      image: "assets/KARMA-AI.png",
+      tags: ["React", "Express", "MongoDB", "Clerk API", "Google Gemini AI API"],
+      liveDemo: "https://gem-clone-lilac.vercel.app/",
+      sourceCode: "https://github.com/kwoeser/GemClone",
+  },
 
 
 
@@ -53,7 +54,7 @@ function Projects() {
       <div className="projects-header">
         <h2>Featured Projects</h2>
 
-        <Link to="/Projects" className="view-more">View More →</Link>
+        <Link to="/Projects" className="view-more">view more →</Link>
       </div>
 
       <div className="projects-container">

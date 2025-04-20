@@ -7,9 +7,9 @@ import "../index.css";
 function ProjectsPage() {
   const projects = [
     {
-      title: "Article Curation Platform",
+      title: "ByteSized Reads",
       description:
-      "Worked on a team to develop a full-stack article curation platform using React, Node.js, and TS-rest, with type-safe APIs and optimized data fetching with React Query.",
+      "Site to discover and share articles. Users can create accounts, browse by topic and review content through a simple interface.",
       image: "assets/ARTICLE.png",
       tags: ["TypeScript", "React", "Node.js", "Tailwind CSS", "React Query", "PostgreSQL", "Docker", "AWS"],
       liveDemo: "https://bytereads.duckdns.org/",
@@ -18,7 +18,7 @@ function ProjectsPage() {
     {
       title: "GitRead",
       description:
-      "Developed an automated tool that generates detailed README templates for GitHub repositories. Uses GitHub OAuth for authentication and pulls repository metadata to dynamically create comprehensive documentation.",
+      "Helps developers generate README files by pulling in their GitHub repo info.",
       image: "assets/gitread.png",
       tags: ["Python", "Flask", "React", "GitHub OAuth", "React Query"],
       liveDemo: "https://gitread-five.vercel.app/",
@@ -27,7 +27,7 @@ function ProjectsPage() {
     {
       title: "House Prices Predictor",
       description:
-      "Built a machine learning model to predict house prices and deployed it via a Flask API. Optimized Random Forest and Gradient Boosting models, improving accuracy with hyperparameter tuning and RMSE evaluation.",
+      "App that predicts house prices based on real housing data. Enter details like square footage and number of rooms and get a quick estimate.",
       image: "assets/HOUSE-PRICE.png",
       tags: ["Python", "Flask", "Pandas", "Scikit-learn", "Matplotlib"],
       sourceCode: "https://github.com/kwoeser/regression-house-prices",
@@ -36,9 +36,9 @@ function ProjectsPage() {
     {
         title: "AI chatbot",
         description:
-        "Developing a full-stack AI chatbot powered by Google Gemini AI. Built with React for the front end and Express & MongoDB for the back end. Integrated Clerk authentication to enable secure user sign-ups and logins.",
+        "Chatbot powered by Google Gemini. Still in development, with plans to support multiple LLMs.",
         image: "assets/KARMA-AI.png",
-        tags: ["React", "Express", "MongoDB", "Git", "Clerk API", "Google Gemini AI API"],
+        tags: ["React", "Express", "MongoDB", "Clerk API", "Google Gemini AI API"],
         liveDemo: "https://gem-clone-lilac.vercel.app/",
         sourceCode: "https://github.com/kwoeser/GemClone",
     },
@@ -46,7 +46,7 @@ function ProjectsPage() {
     {
       title: "Easy A",
       description:
-      "Web based app designed to help students analyze the grading history of courses and instructors. Students can use historical grade data to compare grading distributions and make informed decisions about which classes and instructors to choose.",
+      "Helps students figure out how tough a class or professor is by looking at past grade data.",
       image: "assets/easyA.png",
       tags: ["Python", "Flask", "MongoDB", "JavaScript", "AJAX", "BeautifulSoup", "Docker"],
       sourceCode: "https://github.com/kwoeser/EasyA",
@@ -54,26 +54,25 @@ function ProjectsPage() {
 
     {
       title: "Personal Portfolio Website",
-      description: "Designed and developed a website to showcase projects, skills, experience, and personal favorites.",
+      description: "Site to showcase projects, skills, experience, and personal favorites.",
       image: "assets/portf.png",
-      tags: ["React", "CSS", "Vite", "React Router", "Framer Motion"],
+      tags: ["React", "CSS", "React Router", "Framer Motion"],
       liveDemo: "https://kwoeser.netlify.app/",
       sourceCode: "https://github.com/kwoeser/PersonalWebsite"
     },
     
     {
-      title: "Gym App",
+      title: "Tibetan Book Store",
       description:
-      "Developed a gym web app for users to generate workout plans and track progress.",
-      image: "assets/gym.png",
-      tags: ["React", "Tailwind CSS", "Vite"],
-      liveDemo: "https://karmawoeser.netlify.app",
+      "Online bookstore where users can browse and manage book listings.",
+      image: "assets/portf.png",
+      tags: ["React", "Node.js", "Express", "MySQL", "Docker"],
       sourceCode: "https://github.com/kwoeser/gymappp",
     },
     
 
 
-    // Change gym app and add pacman ai
+    // Add pacman ai....
 
 
 
