@@ -19,7 +19,7 @@ const projects = [
     description:
     "Helps developers generate README files by pulling in their GitHub repo info.",
     image: "assets/gitread.png",
-    tags: ["Python", "Flask", "React", "GitHub OAuth", "React Query"],
+    tags: ["Python", "Flask", "React", "GitHub OAuth", "React Query", "Google Gemini API"],
     liveDemo: "https://gitread-five.vercel.app/",
     sourceCode: "https://github.com/kwoeser/gitread",
   },
@@ -37,7 +37,7 @@ const projects = [
       description:
       "Chatbot powered by Google Gemini. Still in development, with plans to support multiple LLMs.",
       image: "assets/KARMA-AI.png",
-      tags: ["React", "Express", "MongoDB", "Clerk API", "Google Gemini AI API"],
+      tags: ["React", "Express", "MongoDB", "Clerk API", "Google Gemini API"],
       liveDemo: "https://gem-clone-lilac.vercel.app/",
       sourceCode: "https://github.com/kwoeser/GemClone",
   },
