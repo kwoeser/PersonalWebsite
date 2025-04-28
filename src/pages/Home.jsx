@@ -33,7 +33,7 @@ function Home() {
           <br/>
           <MapPin className="map-icon"/>Portland, OR
           <p>
-          Backend developer and CS student trying to build software that's reliable and not annoying to use.
+          I build reliable software that isn't a pain to use
           </p>
 
         </motion.p>
