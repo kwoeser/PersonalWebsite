@@ -6,6 +6,15 @@ import { Link } from "react-router-dom";
 // Project Descriptions
 const projects = [
   {
+      title: "Fake News & Political Bias Detector",
+      description:
+      "Site to analyze potential misinformation and political bias in news articles. Submit any article URL to scrape and analyze its content. ",
+      image: "assets/fakenews.png",
+      tags: ["Python", "FastAPI", "Scikit-learn", "NumPy", "TypeScript", "React"],
+      // liveDemo: "https://bytereads.duckdns.org/",
+      sourceCode: "https://github.com/kwoeser/fakenews",
+    },
+  {
     title: "ByteSized Reads",
     description:
     "Site to discover and share articles. Users can create accounts, browse by topic and review content through a simple interface.",
@@ -31,18 +40,6 @@ const projects = [
     tags: ["Python", "Flask", "Pandas", "Scikit-learn", "Matplotlib"],
     sourceCode: "https://github.com/kwoeser/regression-house-prices",
 },
-
-  {
-      title: "AI chatbot",
-      description:
-      "Chatbot powered by Google Gemini. Still in development, with plans to support multiple LLMs.",
-      image: "assets/KARMA-AI.png",
-      tags: ["React", "Express", "MongoDB", "Clerk API", "Google Gemini API"],
-      liveDemo: "https://gem-clone-lilac.vercel.app/",
-      sourceCode: "https://github.com/kwoeser/GemClone",
-  },
-
-
 
 ];
 
