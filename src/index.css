@@ -3,11 +3,11 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #121212; 
+  background-color: #121212;
   color: #fff;
   font-family: 'Nunito', sans-serif;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
 }
 
@@ -111,12 +111,12 @@ body {
 /* Moves the icon up slightly */
 .download-icon {
   position: relative;
-  top: -5px; 
+  top: -5px;
 }
 
 .map-icon {
   position: relative;
-  top: 5px; 
+  top: 5px;
   margin-right: 5px;
 }
 
@@ -145,7 +145,7 @@ a:hover {
 
 /* Tab Options */
 .tab-option {
-  flex: 1; 
+  flex: 1;
   padding: 12px 0;
   font-size: 16px;
   text-align: center;
@@ -160,14 +160,14 @@ a:hover {
 }
 
 .tab-option.active {
-  color: #181818; 
+  color: #181818;
   font-weight: bold;
 }
 
 /* Sliding Tab */
 .tab-indicator {
   position: absolute;
-  width: 50%; 
+  width: 50%;
   height: 75%;
   background-color: #fff;
   border-radius: 12px;
@@ -432,5 +432,110 @@ img {
 
 .footer-icon:hover {
   transform: scale(1.2);
-  color: #bbb;
+  color: #1DA1F2;
+}
+
+/* Added hamburger menu styles */
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .page-container {
+    width: 95%;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #1e1e1e;
+    padding: 10px 0;
+    z-index: 1000;
+  }
+
+  .nav-links.mobile-menu-open {
+    display: flex;
+  }
+
+  .nav-item {
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .contact-title {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .description p {
+    font-size: 16px;
+  }
+
+  .btn-text {
+    font-size: 18px;
+  }
+
+  /* Adjust tab bar for smaller screens */
+  .tab-bar {
+    flex-direction: column;
+  }
+
+  .tab-option {
+    flex: none;
+    width: 100%;
+    color: #ccc;
+    position: relative;
+  }
+
+  .tab-option.active {
+    color: #181818;
+  }
+
+  .tab-indicator {
+    display: none;
+  }
+
+  /* Style for the CSS-only indicator on small screens */
+  .tab-option.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 12px;
+  }
 }
