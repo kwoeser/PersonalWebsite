@@ -72,7 +72,7 @@ function WorkEducationTabs() {
                 <div className="timeline-content">
                   <span className="timeline-date">Sept 2022 - June 2023</span>
                   <h3>University of Oregon SRML</h3>
-                  <p>Data Analyst Intern</p>
+                  <p>Software Engineer Intern</p>
                   
                   {/* Description */}
                   <ul className="job-description">
