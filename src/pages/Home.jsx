@@ -20,7 +20,6 @@ function Home() {
           transition={{ duration: 0.5 }}
         >
           Karma Woeser
-          {/* 👋 */}
         </motion.h1>
 
         <motion.p
@@ -31,9 +30,9 @@ function Home() {
         >
           Software Developer
           <br/>
-          <MapPin className="map-icon"/>Portland, OR
+          <MapPin className="map-icon"/>Gresham, OR
           <p>
-          {/* Backend Developer and CS student  */}
+          Focused on backend work. Open to new roles and always building.
           </p>
 
         </motion.p>

@@ -58,8 +58,8 @@ function WorkEducationTabs() {
 
                   {/* Description */}
                   <ul className="job-description">
-                  <li>Assisted in fine-tuning generative AI models.</li>
-                  <li>Conducted model evaluations and adjusted hyperparameters to optimize performance.</li>
+                  <li>Assisted in the fine-tuning of models using PyTorch and evaluated performance.</li>
+                  <li>Documented model behavior, tradeoffs, and testing results to support continued development.</li>
                     
                   </ul>
                 </div>  
@@ -77,7 +77,7 @@ function WorkEducationTabs() {
                   {/* Description */}
                   <ul className="job-description">
                   <li>Developed scripts to automate data collection and ensure data integrity.</li>
-                  <li>Participated in data collection efforts, retrieving solar radiation data from various stations across Oregon.</li>
+                  <li>Automated data processing using Python and NumPy, increasing processing speed by ∼15%.</li>
                   </ul>
 
                 </div>
@@ -99,7 +99,7 @@ function WorkEducationTabs() {
                   <span className="timeline-date">2021 - 2025</span>
                   <h3>University of Oregon</h3>
                   <p>Bachelor's Degree</p>
-                  <p>Major in Computer Science, Minor in Math</p>
+                  <p>Major in Computer Science</p>
                 </div>
               </div>
             </motion.div>

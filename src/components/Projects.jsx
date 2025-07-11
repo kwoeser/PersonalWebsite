@@ -11,7 +11,6 @@ const projects = [
       "Site to analyze potential misinformation and political bias in news articles. Submit any article URL to scrape and analyze its content. ",
       image: "assets/fakenews.png",
       tags: ["Python", "FastAPI", "Scikit-learn", "NumPy", "TypeScript", "React"],
-      // liveDemo: "https://bytereads.duckdns.org/",
       sourceCode: "https://github.com/kwoeser/fakenews",
     },
   {
