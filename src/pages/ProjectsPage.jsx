@@ -69,17 +69,6 @@ function ProjectsPage() {
       liveDemo: "https://kwoeser.netlify.app/",
       sourceCode: "https://github.com/kwoeser/PersonalWebsite"
     },
-    
-    {
-      title: "Tibetan Book Store",
-      description:
-      "Online bookstore where users can browse and manage book listings.",
-      image: "assets/portf.png",
-      tags: ["React", "Node.js", "Express", "MySQL", "Docker"],
-      sourceCode: "https://github.com/kwoeser/gymappp",
-    },
-    
-
 
     // Add pacman ai....
 
