@@ -25,22 +25,6 @@ const Books = () => {
   const [movies, setMovies] = useState(hardcodedBooks);
   const [loading, setLoading] = useState(false);
 
-  // useEffect(() => {
-  //   const fetchMovies = async () => {
-  //     try {
-  //       const response = await fetch("https://personalwebsite-z2n0.onrender.com/favorites");
-  //       // const response = await fetch("http://localhost:4000/favorites");
-  //       const data = await response.json();
-  //       setMovies(data.books);
-  //     } catch (error) {
-  //         console.error("Error fetching favorites:", error);
-  //     } finally {
-  //         setLoading(false);
-  //     }
-  //   };
-
-  //   fetchMovies();
-  // }, []);
 
   return (
     <div className="movie-container">

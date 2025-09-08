@@ -21,7 +21,7 @@ function ProjectsPage() {
       "Site to discover and share articles. Users can create accounts, browse by topic and review content through a simple interface.",
       image: "assets/ARTICLE.png",
       tags: ["TypeScript", "React", "Node.js", "Tailwind CSS", "React Query", "PostgreSQL", "Docker", "AWS"],
-      liveDemo: "https://bytereads.duckdns.org/",
+      // liveDemo: "https://bytereads.duckdns.org/",
       sourceCode: "https://github.com/kwoeser/Byte-sized-reads",
     },
     {

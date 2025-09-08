@@ -1,15 +1,12 @@
 import { Link } from "react-router-dom";
 import "../index.css"; 
 import { useState } from "react";
-import { Sun, Moon, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 function Navbar() {
-  const [lightMode, setLightMode] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const toggleTheme = () => {
-    setLightMode(!lightMode);
-  };
+
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -27,14 +24,6 @@ function Navbar() {
       <button className="hamburger-menu" onClick={toggleMobileMenu}>
         {isMobileMenuOpen ? <X /> : <Menu />}
       </button>
-
-      {/* light and dark mode */}
-      {/* <div className={lightMode ? "app light-mode" : "app"}>
-            <button onClick={toggleTheme} className="light-dark-mode">
-              {lightMode ? <Sun/> : <Moon/>}
-            </button>
-      </div> */}
-
 
     </nav>
   );

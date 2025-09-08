@@ -28,22 +28,6 @@ const Games = () => {
   const [movies, setGames] = useState(hardcodedGames);
   const [loading, setLoading] = useState(false);
 
-  // useEffect(() => {
-  //   const fetchMovies = async () => {
-  //     try {
-  //       const response = await fetch("https://personalwebsite-z2n0.onrender.com/favorites");
-  //       // const response = await fetch("http://localhost:4000/favorites");
-  //       const data = await response.json();
-  //       setGames(data.games);
-  //     } catch (error) {
-  //           console.error("Error fetching games:", error);
-  //     } finally {
-  //           setLoading(false);
-  //     }
-  //   };
-
-  //   fetchMovies();
-  // }, []);
 
   return (
     <div className="movie-container">

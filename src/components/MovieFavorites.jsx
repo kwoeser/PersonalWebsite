@@ -29,21 +29,7 @@ const MovieFavorites = () => {
   const [loading, setLoading] = useState(false); 
 
   // Uncomment this later when integrating with backend
-  // useEffect(() => {
-  //   const fetchMovies = async () => {
-  //     try {
-  //       const response = await fetch("https://personalwebsite-z2n0.onrender.com/favorites");
-  //       const data = await response.json();
-  //       setMovies(data.movies);
-  //     } catch (error) {
-  //       console.error("Error fetching favorites:", error);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
 
-  //   fetchMovies();
-  // }, []);
 
   return (
     <div className="movie-container">
