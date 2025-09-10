@@ -32,7 +32,7 @@ function Home() {
           <br/>
           <MapPin className="map-icon"/>Gresham, OR
           <p>
-          Focused on backend work. Open to new roles and always building.
+          Focused on backend work. Open to new roles.
           </p>
 
         </motion.p>
