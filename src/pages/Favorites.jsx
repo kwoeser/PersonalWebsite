@@ -13,7 +13,7 @@ function Favorites() {
         <Books/>
         <Games/>
 
-        <Songs/>
+        {/* <Songs/> */}
       </div>
     );
   }
