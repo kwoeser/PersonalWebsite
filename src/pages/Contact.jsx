@@ -54,7 +54,7 @@ function Contact() {
             type="text"
             name="name"
             placeholder="Name"
-            value={formData.name}s
+            value={formData.name}
             onChange={handleChange}
             required
             className="input-field"
