@@ -14,12 +14,12 @@ const hardcodedGames = [
   },
   {
     title: "Assassin's Creed Unity",
-    poster: "https://m.media-amazon.com/images/M/MV5BMDY1NmE5YzgtYTRiYS00ZDVlLTkxNDktYzU2YzIyZWE3NjQ2XkEyXkFqcGc@._V1_.jpg"
+    poster: "https://i.ebayimg.com/images/g/8M8AAOSwLSxeuPLc/s-l1200.jpg"
   },
   {
     title: "Terraria",
     poster: "https://m.media-amazon.com/images/M/MV5BZWJkZWNkZDgtOTMzMS00NjlhLTk5MTEtZWFiMTQ0MzE4MzAyXkEyXkFqcGc@._V1_.jpg"
-  }
+  },
   
 ];
 
