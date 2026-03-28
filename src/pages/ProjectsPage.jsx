@@ -7,15 +7,6 @@ import "../index.css";
 function ProjectsPage() {
   const projects = [
     {
-      title: "Fake News & Political Bias Detector",
-      description:
-      "Site to analyze potential misinformation and political bias in news articles. Submit any article URL to scrape and analyze its content. ",
-      image: "assets/fakenews.png",
-      tags: ["Python", "FastAPI", "Scikit-learn", "NumPy", "TypeScript", "React"],
-      // liveDemo: "https://bytereads.duckdns.org/",
-      sourceCode: "https://github.com/kwoeser/fakenews",
-    },
-    {
       title: "ByteSized Reads",
       description:
       "Site to discover and share articles. Users can create accounts, browse by topic and review content through a simple interface.",
@@ -32,6 +23,15 @@ function ProjectsPage() {
       tags: ["Python", "Flask", "React", "GitHub OAuth", "React Query", "Google Gemini API"],
       liveDemo: "https://gitread-five.vercel.app/",
       sourceCode: "https://github.com/kwoeser/gitread",
+    },
+    {
+      title: "Fake News & Political Bias Detector",
+      description:
+      "Site to analyze potential misinformation and political bias in news articles. Submit any article URL to scrape and analyze its content. ",
+      image: "assets/fakenews.png",
+      tags: ["Python", "FastAPI", "Scikit-learn", "NumPy", "TypeScript", "React"],
+      // liveDemo: "https://bytereads.duckdns.org/",
+      sourceCode: "https://github.com/kwoeser/fakenews",
     },
     {
       title: "House Prices Predictor",

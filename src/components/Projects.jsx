@@ -5,14 +5,7 @@ import { Link } from "react-router-dom";
 
 // Project Descriptions
 const projects = [
-  {
-      title: "Fake News & Political Bias Detector",
-      description:
-      "Site to analyze potential misinformation and political bias in news articles. Submit any article URL to scrape and analyze its content. ",
-      image: "assets/fakenews.png",
-      tags: ["Python", "FastAPI", "Scikit-learn", "NumPy", "TypeScript", "React"],
-      sourceCode: "https://github.com/kwoeser/fakenews",
-    },
+
   {
     title: "ByteSized Reads",
     description:
@@ -31,14 +24,6 @@ const projects = [
     liveDemo: "https://gitread-five.vercel.app/",
     sourceCode: "https://github.com/kwoeser/gitread",
   },
-  {
-    title: "House Prices Predictor",
-    description:
-    "App that predicts house prices based on real housing data. Enter details like square footage and number of rooms and get a quick estimate.",
-    image: "assets/HOUSE-PRICE.png",
-    tags: ["Python", "Flask", "Pandas", "Scikit-learn", "Matplotlib"],
-    sourceCode: "https://github.com/kwoeser/regression-house-prices",
-},
 
 ];
 

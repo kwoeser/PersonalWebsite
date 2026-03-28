@@ -49,6 +49,21 @@ function WorkEducationTabs() {
               {/* Work Timeline */}
               <div className="timeline-item">
                 <div className="timeline-icon">
+                  <img src="assets/dext.jpg" alt="Dext Capital" />
+                </div>
+                <div className="timeline-content">
+                  <span className="timeline-date">March 2026 - Present</span>
+                  <h3>Dext Capital</h3>
+                  <p>Help Desk Technician</p>
+
+                  {/* Description */}
+             
+                
+                </div>  
+              </div>
+
+              <div className="timeline-item">
+                <div className="timeline-icon">
                   <img src="assets/cognizant.jpg" alt="Cognizant" />
                 </div>
                 <div className="timeline-content">
