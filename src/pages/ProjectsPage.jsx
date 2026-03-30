@@ -18,7 +18,7 @@ function ProjectsPage() {
     {
       title: "GitRead",
       description:
-      "Helps developers generate README files by pulling in their GitHub repo info.",
+      "Helps developers generate README templates by pulling GitHub repository data and using Google Gemini to produce structured, customizable documentation.",
       image: "assets/gitread.png",
       tags: ["Python", "Flask", "React", "GitHub OAuth", "React Query", "Google Gemini API"],
       liveDemo: "https://gitread-five.vercel.app/",
