@@ -54,7 +54,7 @@ function WorkEducationTabs() {
                 <div className="timeline-content">
                   <span className="timeline-date">March 2026 - Present</span>
                   <h3>Dext Capital</h3>
-                  <p>Help Desk Technician</p>
+                  <p>IT Support Technician</p>
 
                   {/* Description */}
              
