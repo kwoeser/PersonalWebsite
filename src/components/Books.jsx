@@ -8,10 +8,6 @@ const hardcodedBooks = [
     poster: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1555447414i/44767458.jpg"
   },
   {
-    title: "Blood Meridian",
-    poster: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1701688704i/394535.jpg"
-  },
-  {
     title: "One Piece",
     poster: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1318523719i/1237398.jpg"
   },
